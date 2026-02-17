@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "AI Code Reviewer",
+  "version": "1.0",
+  "description": "AI-powered review for DSA solutions and assignments",
+
+  "permissions": ["activeTab", "scripting"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

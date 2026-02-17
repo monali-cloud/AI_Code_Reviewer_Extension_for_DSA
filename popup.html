@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 360px;
+      padding: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 8px;
+      max-height: 150px;
+      overflow: auto;
+      white-space: pre-wrap;
+      border-radius: 4px;
+    }
+    .review {
+      background: #eef7ff;
+      padding: 8px;
+      border-radius: 4px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="reviewBtn">Review My Solution</button>
+
+  <h4>Your Code</h4>
+  <pre id="codeBox">—</pre>
+
+  <h4>AI Review</h4>
+  <div class="review" id="reviewBox">—</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
